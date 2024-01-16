@@ -17,7 +17,7 @@ const Navbar = () => {
 				<Link className={classes.link} href='/'>
 					Usługi
 				</Link>
-				<Link className={classes.link} href='/'>
+				<Link className={classes.link} href='#kontakt'>
 					Kontakt
 				</Link>
 			</div>

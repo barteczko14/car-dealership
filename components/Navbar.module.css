@@ -6,14 +6,14 @@
 	justify-content: space-around;
 	position: fixed;
 	box-shadow: 0 1px 15px -10px #333;
-	padding: 5px 20px;
+	padding: 10px 20px;
 	font-family: 'Gt america standard', sans-serif;
 	text-transform: uppercase;
 }
+
 .links_container {
 	padding: 0 4px;
 	display: flex;
-	cursor: pointer;
 	color: #45193b;
 	flex: 1;
 	justify-content: center;
@@ -62,11 +62,9 @@
 }
 @media (max-width: 768px) {
 	.navbar_container {
-		justify-content: end;
+		justify-content: space-between;
 	}
-	.logo {
-		display: none;
-	}
+
 	.links_container {
 		display: none;
 	}

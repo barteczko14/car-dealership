@@ -3,6 +3,7 @@ import React from 'react'
 export default function Home() {
 	return (
 		<>
+			<div>TestStart</div>
 			<div>Test</div>
 			<div>Test</div>
 			<div>Test</div>
@@ -64,8 +65,7 @@ export default function Home() {
 			<div>Test</div>
 			<div>Test</div>
 			<div>Test</div>
-			<div>Test</div>
-			<div>Test</div>
+			<div>End</div>
 		</>
 	)
 }

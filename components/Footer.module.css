@@ -1,0 +1,43 @@
+.footer {
+	background-color: #ed4b5f;
+	color: #fff;
+}
+.footer_container {
+	margin-top: 50px;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.title {
+	margin: 40px 0px;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1;
+	color: #45193b;
+	text-transform: uppercase;
+}
+
+.footer_cards {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.footer_card {
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.footer_company {
+	margin: 40px auto;
+}
+.footer_icon {
+	font-size: 40px;
+}
