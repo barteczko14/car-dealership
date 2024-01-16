@@ -1,53 +1,64 @@
 'use client'
 import Link from 'next/link'
+import classes from './Navbar.module.css'
 import React, { useState } from 'react'
+import Button from './Button'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false)
 
-	const links = [
-		{
-			link: 'o-nas',
-			linkDesc: 'O nas',
-		},
-		{
-			link: 'kontakt',
-			linkDesc: 'Kontakt',
-		},
-	]
-
 	return (
-		<div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
-			<div>
-				<h1 className='text-5xl ml-2'>
-					<a href='/'>KryczCars</a>
-				</h1>
+		<nav className={classes.navbar_container}>
+			<div className={classes.links_container}>
+				<Link className={classes.link} href='/'>
+					O nas
+				</Link>
+				<Link className={classes.link} href='/'>
+					Usługi
+				</Link>
+				<Link className={classes.link} href='/'>
+					Kontakt
+				</Link>
 			</div>
-			<ul className='hidden md:flex'>
-				{links.map(({ link, linkDesc }, index) => (
-					<li
-						key={index}
-						className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200'>
-						<Link href={link}>{linkDesc}</Link>
-					</li>
-				))}
-			</ul>
-			<div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-gray-500 md:hidden'>
+			<div>
+				<Link className={classes.logo} href='/'>
+					KryczCars
+				</Link>
+			</div>
+			<div className={classes.links_container}>
+				<Button btnStyle='button_main'>
+					<Link className={classes.link} href='/oferta'>
+						Oferta
+					</Link>
+				</Button>
+			</div>
+			<div onClick={() => setNav(!nav)} className={classes.burger_icon}>
 				{nav ? <FaTimes size={30} /> : <FaBars size={30} />}
 			</div>
 			{nav && (
-				<ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
-					{links.map(({ link, linkDesc }, index) => (
-						<li key={index} className='px-4 cursor-pointer capitalize py-6 text-4xl'>
-							<Link onClick={() => setNav(!nav)} href={link}>
-								{linkDesc}
+				<div className={classes.mobile_nav}>
+					<div className={classes.mobile_links_container}>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
+							O nas
+						</Link>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
+							Usługi
+						</Link>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
+							Kontakt
+						</Link>
+					</div>
+					<div>
+						<Button btnStyle={'button_second'}>
+							<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/oferta'>
+								Oferta
 							</Link>
-						</li>
-					))}
-				</ul>
+						</Button>
+					</div>
+				</div>
 			)}
-		</div>
+		</nav>
 	)
 }
 
