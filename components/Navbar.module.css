@@ -1,20 +1,16 @@
 .navbar_container {
-	background-color: #fff;
+	background-color: #f4f4f5;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	position: fixed;
-	box-shadow: 0 1px 15px -10px #333;
+	box-shadow: 0 1px 15px 10px #333;
 	padding: 10px 20px;
-	font-family: 'Gt america standard', sans-serif;
-	text-transform: uppercase;
+	color: #333;
 }
-
 .links_container {
-	padding: 0 4px;
 	display: flex;
-	color: #45193b;
 	flex: 1;
 	justify-content: center;
 }
@@ -23,17 +19,16 @@
 }
 
 .logo {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	line-height: 1;
-	color: #45193b;
 }
 .burger_icon {
 	cursor: pointer;
 	padding-right: 16px;
 	z-index: 10;
 	display: none;
-	color: #ed4b5f;
+	color: #39bab4;
 }
 .mobile_nav {
 	display: flex;
@@ -45,7 +40,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #45193b;
+	background-color: #1d1d20;
 	position: fixed;
 }
 .mobile_link {
@@ -64,12 +59,11 @@
 	.navbar_container {
 		justify-content: space-between;
 	}
-
 	.links_container {
 		display: none;
 	}
 	.burger_icon {
 		display: flex;
-		padding: 15px;
+		padding: 5px;
 	}
 }

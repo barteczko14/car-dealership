@@ -23,7 +23,7 @@ const Navbar = () => {
 			</div>
 			<div>
 				<Link className={classes.logo} href='/'>
-					KryczCars
+					Your Future Car
 				</Link>
 			</div>
 			<div className={classes.links_container}>
@@ -50,7 +50,7 @@ const Navbar = () => {
 						</Link>
 					</div>
 					<div>
-						<Button btnStyle={'button_second'}>
+						<Button btnStyle={'button_main'}>
 							<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/oferta'>
 								Oferta
 							</Link>

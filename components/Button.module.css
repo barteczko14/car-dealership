@@ -1,13 +1,12 @@
 .button_main {
 	padding: 6px 12px;
-	border: 2px solid #45193b;
+	border: 2px solid #39bab4;
 	border-radius: 12px;
-	background-color: #45193b;
+	background-color: #39bab4;
 	font-family: 'Gt america standard', sans-serif;
 	color: #fff;
 	text-align: center;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 .button_second {
 	padding: 6px 12px;
@@ -18,5 +17,4 @@
 	color: #fff;
 	text-align: center;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 }

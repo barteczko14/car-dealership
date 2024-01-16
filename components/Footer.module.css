@@ -1,24 +1,12 @@
 .footer {
-	background-color: #ed4b5f;
-	color: #fff;
-}
-.footer_container {
-	margin-top: 50px;
-	max-width: 80rem;
-	margin: 0 auto;
-	padding: 0 20px;
+	color: #a2a2a8;
+	border-top: 0.1px solid rgba(46, 46, 51, 0.79);
+	margin-top: 3rem;
+	padding: 0 1.25rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
-.title {
-	margin: 40px 0px;
-	font-size: 2rem;
-	font-weight: 600;
-	line-height: 1;
-	color: #45193b;
-	text-transform: uppercase;
 }
 
 .footer_cards {
@@ -28,16 +16,23 @@
 	align-items: center;
 	flex-wrap: wrap;
 }
+
 .footer_card {
-	padding: 40px;
+	padding: 2rem;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
-.footer_company {
-	margin: 40px auto;
+
+.footer_owner {
+	margin: 2.5rem auto;
+	color: #f4f4f5;
+	font-size: 1rem;
 }
+
 .footer_icon {
-	font-size: 40px;
+	font-size: 3rem;
+	color: #39bab4;
+	margin: 10px;
 }
