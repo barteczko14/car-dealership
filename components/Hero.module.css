@@ -1,0 +1,50 @@
+.hero_wrapper {
+	position: relative;
+	height: 70vh;
+	background: linear-gradient(to top, #1d1d20, rgba(235, 242, 241, 0.3));
+}
+
+.hero_img,
+.middle_img {
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: brightness(30%);
+	box-shadow: 0px 20px 20px 4px #333;
+}
+
+.hero_img {
+	opacity: 0.3;
+}
+
+.middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	height: 60%;
+	text-align: center;
+}
+
+.hero_title {
+	font-size: 3.5rem;
+	color: #f4f4f5;
+	line-height: 1.18;
+	font-weight: 900;
+	position: absolute;
+	letter-spacing: -0.02em;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.color_title {
+	color: #39bab4;
+}
+@media (max-width: 768px) {
+	.hero_title {
+		font-size: 2rem;
+	}
+}

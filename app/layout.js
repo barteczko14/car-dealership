@@ -12,8 +12,8 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body>
 				<Navbar />
+				{children}
 				<div className='wrapper'>
-					{children}
 					<Footer />
 				</div>
 			</body>
