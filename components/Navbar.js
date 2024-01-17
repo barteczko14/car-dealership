@@ -14,7 +14,7 @@ const Navbar = () => {
 				<Link className={classes.link} href='/'>
 					O nas
 				</Link>
-				<Link className={classes.link} href='/'>
+				<Link className={classes.link} href='#services'>
 					Usługi
 				</Link>
 				<Link className={classes.link} href='#kontakt'>
@@ -42,10 +42,10 @@ const Navbar = () => {
 						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
 							O nas
 						</Link>
-						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='#services'>
 							Usługi
 						</Link>
-						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='#kontakt'>
 							Kontakt
 						</Link>
 					</div>
