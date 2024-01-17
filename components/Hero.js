@@ -5,7 +5,7 @@ import classes from './Hero.module.css'
 
 const Hero = () => {
 	return (
-		<section className={classes.hero_wrapper}>
+		<section id='o-nas' className={classes.hero_wrapper}>
 			<Image className={classes.hero_img} src={heroImg}></Image>
 			<div className={classes.middle}>
 				<Image priority className={classes.middle_img} src={heroImg2}></Image>
