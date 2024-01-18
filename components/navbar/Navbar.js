@@ -10,6 +10,7 @@ import Image from 'next/image'
 const Navbar = () => {
 	const [nav, setNav] = useState(false)
 
+
 	return (
 		<nav className={classes.navbar}>
 			<div className={classes.links_container}>
