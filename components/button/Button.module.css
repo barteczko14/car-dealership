@@ -8,6 +8,10 @@
 	font-weight: 500;
 	line-height: 1.375;
 	color: #fff;
+	transition: background-color 0.3s;
+}
+.button:hover{
+	background-color: rgb(66, 209, 202);
 }
 @media (max-width: 768px) {
 	.button {
