@@ -1,27 +1,24 @@
-.hero_wrapper {
+.hero {
 	position: relative;
 	height: 70vh;
-	width: 100%;
-	background: linear-gradient(to top, #1d1d20, rgba(235, 242, 241, 0.3));
+	background: linear-gradient(to top, #000, rgba(235, 242, 241, 0.4));
+	box-shadow: 0px 20px 20px 5px #000;
 }
 
-.hero_img,
-.middle_img {
+.outer_img,
+.inner_img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
 	filter: brightness(30%);
 	box-shadow: 0px 20px 20px 4px #333;
 }
 
-.hero_img {
-	opacity: 0.3;
+.outer_img {
+	opacity: 0.4;
 }
 
-.middle {
+.hero div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -31,7 +28,7 @@
 	text-align: center;
 }
 
-.hero_title {
+.hero div h1 {
 	font-size: 3.5rem;
 	color: #f4f4f5;
 	line-height: 1.18;
@@ -42,11 +39,12 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.color_title {
+
+.hero div h1 span {
 	color: #39bab4;
 }
 @media (max-width: 768px) {
-	.hero_title {
+	.hero div h1 {
 		font-size: 2rem;
 	}
 }
