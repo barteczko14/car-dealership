@@ -2,9 +2,9 @@
 import Link from 'next/link'
 import classes from './Navbar.module.css'
 import { useState } from 'react'
-import Button from './Button'
+import Button from '../button/Button'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 import Image from 'next/image'
 
 const Navbar = () => {
