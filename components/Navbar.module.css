@@ -1,14 +1,13 @@
-.navbar_container {
+.navbar {
 	background-color: #f4f4f5;
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 	position: fixed;
 	box-shadow: 0 1px 15px 10px #333;
-	padding: 10px 20px;
+	padding: 5px 40px;
 	color: #333;
-	z-index: 9;
+	z-index: 1;
 }
 .links_container {
 	display: flex;
@@ -16,17 +15,17 @@
 	justify-content: center;
 }
 .link {
-	margin: 0 10px;
+	margin: 0 1rem;
 }
 
 .logo {
-	font-size: 1.5rem;
-	font-weight: 600;
-	line-height: 1;
+	height: 100%;
+	width: 60px;
+	padding: 0;
+	margin: 0;
 }
 .burger_icon {
 	cursor: pointer;
-	padding-right: 16px;
 	z-index: 10;
 	display: none;
 	color: #39bab4;
@@ -36,7 +35,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -44,20 +42,20 @@
 	background-color: #1d1d20;
 	position: fixed;
 }
-.mobile_link {
-	padding: 20px 16px;
-	cursor: pointer;
-	font-size: 2rem;
-	color: #fff;
-}
-.mobile_links_container {
+.mobile_nav div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 40px;
 }
+.mobile_link {
+	padding: 20px 16px;
+	font-size: 2rem;
+	color: #fff;
+}
+
 @media (max-width: 768px) {
-	.navbar_container {
+	.navbar {
 		justify-content: space-between;
 	}
 	.links_container {

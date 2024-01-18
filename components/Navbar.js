@@ -4,12 +4,14 @@ import classes from './Navbar.module.css'
 import { useState } from 'react'
 import Button from './Button'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '../assets/logo.svg'
+import Image from 'next/image'
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false)
 
 	return (
-		<nav className={classes.navbar_container}>
+		<nav className={classes.navbar}>
 			<div className={classes.links_container}>
 				<Link className={classes.link} href='/'>
 					O nas
@@ -21,16 +23,12 @@ const Navbar = () => {
 					Kontakt
 				</Link>
 			</div>
-			<div>
-				<Link className={classes.logo} href='/'>
-					Your Future Car
-				</Link>
-			</div>
+			<Link href='/'>
+				<Image className={classes.logo} src={logo}></Image>
+			</Link>
 			<div className={classes.links_container}>
 				<Button>
-					<Link  href='/oferta'>
-						Oferta
-					</Link>
+					<Link href='/oferta'>Oferta</Link>
 				</Button>
 			</div>
 			<div onClick={() => setNav(!nav)} className={classes.burger_icon}>
@@ -38,7 +36,7 @@ const Navbar = () => {
 			</div>
 			{nav && (
 				<div className={classes.mobile_nav}>
-					<div className={classes.mobile_links_container}>
+					<div>
 						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
 							O nas
 						</Link>
@@ -49,13 +47,11 @@ const Navbar = () => {
 							Kontakt
 						</Link>
 					</div>
-					<div>
-						<Button>
-							<Link onClick={() => setNav(!nav)}  href='/oferta'>
-								Oferta
-							</Link>
-						</Button>
-					</div>
+					<Button>
+						<Link onClick={() => setNav(!nav)} href='/oferta'>
+							Oferta
+						</Link>
+					</Button>
 				</div>
 			)}
 		</nav>
