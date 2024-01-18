@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import heroImg from '../assets/hero.jpg'
-import heroImg2 from '../assets/hero2.jpg'
+import heroImg from '../../assets/hero.jpg'
+import heroImg2 from '../../assets/hero2.jpg'
 import classes from './Hero.module.css'
 
 const Hero = () => {

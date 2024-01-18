@@ -4,7 +4,8 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
 	title: 'Cars dealership',
-	description: '',
+	description:
+		'Znajdź idealny samochód w naszym profesjonalnym komisie samochodowym. Oferujemy szeroki wybór pojazdów używanych w doskonałym stanie technicznym. Sprawdź naszą ofertę i znajdź swój wymarzony samochód już dziś. Gwarancja jakości, konkurencyjne ceny i przyjazna obsługa klienta.',
 }
 
 export default function RootLayout({ children }) {

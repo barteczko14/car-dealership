@@ -1,20 +1,18 @@
-.button_main {
-	padding: 6px 12px;
-	border: 2px solid #39bab4;
-	border-radius: 12px;
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 16px;
+	border-radius: 0.25rem;
 	background-color: rgb(57, 186, 180);
-	font-family: 'Gt america standard', sans-serif;
+	font-weight: 500;
+	line-height: 1.375;
 	color: #fff;
-	text-align: center;
-	letter-spacing: 2px;
 }
-.button_second {
-	padding: 6px 12px;
-	border: 2px solid #ED4B5F;
-	border-radius: 12px;
-	background-color: #ED4B5F;
-	font-family: 'Gt america standard', sans-serif;
-	color: #fff;
-	text-align: center;
-	letter-spacing: 2px;
+@media (max-width: 768px) {
+	.button {
+		padding: 10px 20px;
+		width: 250px;
+		font-size: 2rem;
+	}
 }

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import classes from './Navbar.module.css'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Button from './Button'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
@@ -27,8 +27,8 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<div className={classes.links_container}>
-				<Button btnStyle='button_main'>
-					<Link className={classes.link} href='/oferta'>
+				<Button>
+					<Link  href='/oferta'>
 						Oferta
 					</Link>
 				</Button>
@@ -50,8 +50,8 @@ const Navbar = () => {
 						</Link>
 					</div>
 					<div>
-						<Button btnStyle={'button_main'}>
-							<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/oferta'>
+						<Button>
+							<Link onClick={() => setNav(!nav)}  href='/oferta'>
 								Oferta
 							</Link>
 						</Button>
