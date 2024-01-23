@@ -13,17 +13,39 @@
 .img_body {
 	display: inline-block;
 }
+.img {
 
+}
 .cart {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border: 1px solid white;
+	background-color: #232626;
+	color: #f4f4f5;
+	padding-bottom: 10px;
 }
 .mark_model {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-direction: row;
+	color: red;
+	margin: 1.5rem 0;
+	font-size: 1.6rem;
+	font-weight: 900;
+}
+.price {
+	color: red;
+	margin: 1.5rem 0;
+	font-size: 1.6rem;
+	font-weight: 900;
+	line-height: 1;
+}
+.card_detail {
+	border-bottom: 1px solid #a2a2a8;
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px;
 }

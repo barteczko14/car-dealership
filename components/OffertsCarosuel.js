@@ -9,17 +9,11 @@ import carsData from '@/app/carsData.js'
 import Image from 'next/image'
 
 function PrevArrow({ className, onClick }) {
-	return (
-		<div
-			className={className}
-			style={{ display: 'block', marginLeft: 20, paddingLeft: 20, zIndex: 9 }}
-			onClick={onClick}
-		/>
-	)
+	return <div className={className} style={{}} onClick={onClick} />
 }
 
 function NextArrow({ className, onClick }) {
-	return <div className={className} style={{ display: 'block', marginRight: 20, paddingRight: 20 }} onClick={onClick} />
+	return <div className={className} onClick={onClick} />
 }
 
 const OffertsCarosuel = () => {
@@ -29,10 +23,30 @@ const OffertsCarosuel = () => {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		infinite: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 3000,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+		],
 	}
 
 	return (
@@ -44,16 +58,42 @@ const OffertsCarosuel = () => {
 					{carsData.map(item => (
 						<div className={classes.cart} key={item.id}>
 							<div className={classes.img_body}>
-								<Image src={item.src} width={200} height={200} alt={item.alt}></Image>
+								<Image
+									className={classes.img}
+									src={item.src}
+									width={500}
+									height={300}
+									style={{ objectFit: 'cover', height: 160 }}
+									alt={item.alt}></Image>
 							</div>
 							<div>
 								<div className={classes.mark_model}>
-									<span>{item.model}</span>
-									<span>{item.marka}</span>
+									<span>
+										{item.model} {item.marka}
+									</span>
 								</div>
-								<h2>{item.marka}</h2>
-								<p>{item.model}</p>
-								<p>{item.rocznik}</p>
+								<div className={classes.card_detail}>
+									<span>Rok produkcji:</span>
+									<span>{item.rocznik}</span>
+								</div>
+								<div className={classes.card_detail}>
+									<span>Przebieg:</span>
+									<span>{item.przebieg}</span>
+								</div>
+								<div className={classes.card_detail}>
+									<span>Rodzaj paliwa:</span>
+									<span>{item.paliwo}</span>
+								</div>
+								<div className={classes.card_detail}>
+									<span>Pojemność silnika:</span>
+									<span>{item.pojemnosc}</span>
+								</div>
+								<div className={classes.card_detail}>
+									<span>Moc silnika:</span>
+									<span>{item.moc}</span>
+								</div>
+
+								<h2 className={classes.price}>39900</h2>
 							</div>
 						</div>
 					))}

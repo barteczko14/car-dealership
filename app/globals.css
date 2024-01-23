@@ -24,3 +24,14 @@ body {
 .slick-track {
 	display: flex !important;
 }
+.slick-prev {
+	left: -10px !important;
+	z-index: 9 !important;
+}
+.slick-next {
+	right: 10px !important;
+}
+.slick-next::before,
+.slick-prev::before {
+	font-size: 40px !important;
+}
