@@ -1,0 +1,29 @@
+.wrapper {
+	max-width: 90rem;
+	margin: 0 auto;
+}
+.offers_carosuel_container {
+	color: #a2a2a8;
+	border-top: 0.1px solid rgba(46, 46, 51, 0.79);
+	margin-top: 3rem;
+	padding: 0 1.25rem;
+	text-align: center;
+}
+
+.img_body {
+	display: inline-block;
+}
+
+.cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid white;
+}
+.mark_model {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}

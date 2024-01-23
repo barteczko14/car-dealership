@@ -16,3 +16,11 @@ body {
 	margin: 0px auto;
 	overflow: visible;
 }
+
+.slick-slide {
+	margin: 0 10px;
+}
+
+.slick-track {
+	display: flex !important;
+}
