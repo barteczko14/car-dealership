@@ -40,10 +40,10 @@ const Navbar = () => {
 						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/'>
 							O nas
 						</Link>
-						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='#services'>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/#services'>
 							Usługi
 						</Link>
-						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='#kontakt'>
+						<Link onClick={() => setNav(!nav)} className={classes.mobile_link} href='/#kontakt'>
 							Kontakt
 						</Link>
 					</div>

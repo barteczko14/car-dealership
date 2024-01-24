@@ -10,7 +10,7 @@ import Button from '../button/Button'
 import Link from 'next/link'
 
 function PrevArrow({ className, onClick }) {
-	return <div className={className} style={{}} onClick={onClick} />
+	return <div className={className} onClick={onClick} />
 }
 
 function NextArrow({ className, onClick }) {
@@ -51,7 +51,6 @@ const OffertsCarosuel = () => {
 	}
 
 	return (
-		<div className={classes.wrapper}>
 			<section className={classes.offers_carosuel_container}>
 				<Title>Ogłoszenia</Title>
 				<Slider {...settings}>
@@ -65,7 +64,6 @@ const OffertsCarosuel = () => {
 					</Button>
 				</div>
 			</section>
-		</div>
 	)
 }
 

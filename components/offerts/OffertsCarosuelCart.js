@@ -5,13 +5,7 @@ const OffertsCarosuelCart = ({ carData }) => {
 	return (
 		<Link href='/oferta/car'>
 			<div className={classes.cart} key={carData.id}>
-				<Image
-					src={carData.src}
-					width={500}
-					height={300}
-					style={{ objectFit: 'cover', height: 160 }}
-					alt={carData.alt}></Image>
-
+				<Image src={carData.src} width={500} height={300} className={classes.img} alt={carData.alt}></Image>
 				<div className={classes.mark_model}>
 					<span>
 						{carData.marka} {carData.model}
