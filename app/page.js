@@ -1,7 +1,7 @@
-import AboutUs from '@/components/AboutUs'
+import AboutUs from '@/components/aboutUs/AboutUs'
 import Hero from '@/components/hero/Hero'
-import Services from '@/components/Services'
-import Opinion from '@/components/Opinion'
+import Services from '@/components/services/Services'
+import Opinions from '@/components/opinions/Opinions'
 import classes from './page.module.css'
 import OffertsCarosuel from '@/components/offerts/OffertsCarosuel'
 
@@ -12,7 +12,7 @@ export default function Home() {
 			<div className={classes.wrapper}>
 				<AboutUs></AboutUs>
 				<OffertsCarosuel />
-				<Opinion></Opinion>
+				<Opinions></Opinions>
 				<Services></Services>
 			</div>
 		</>
