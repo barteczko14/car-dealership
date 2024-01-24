@@ -6,7 +6,7 @@ import aboutUsImage from '../assets/about-us.jpg'
 const AboutUs = () => {
 	return (
 		<div className={classes.wrapper}>
-			<section className={classes.about_us_container}>
+			<section id='o-nas' className={classes.about_us_container}>
 				<Title>O nas</Title>
 				<div className={classes.about_us}>
 					<div className={classes.about_us_image_container}>

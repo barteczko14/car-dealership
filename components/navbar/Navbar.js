@@ -10,14 +10,13 @@ import Image from 'next/image'
 const Navbar = () => {
 	const [nav, setNav] = useState(false)
 
-
 	return (
 		<nav className={classes.navbar}>
 			<div className={classes.links_container}>
-				<Link className={classes.link} href='/'>
+				<Link className={classes.link} href='/#o-nas'>
 					O nas
 				</Link>
-				<Link className={classes.link} href='#services'>
+				<Link className={classes.link} href='/#services'>
 					Usługi
 				</Link>
 				<Link className={classes.link} href='#kontakt'>
