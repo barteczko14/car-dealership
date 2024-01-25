@@ -14,9 +14,9 @@
 	background-color: rgb(66, 209, 202);
 }
 @media (max-width: 768px) {
-	.button {
+	/* .button {
 		padding: 10px 20px;
 		width: 250px;
 		font-size: 2rem;
-	}
+	} */
 }
