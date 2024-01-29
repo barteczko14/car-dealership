@@ -8,12 +8,8 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: brightness(30%);
-	box-shadow: 0px 20px 20px 4px #333;
-}
-
-.outer_img {
-	opacity: 0.4;
+	filter: brightness(50%);
+	opacity: 0.3;
 }
 
 .title {
@@ -21,20 +17,6 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 95%;
-	height: 60%;
-	text-align: center;
-}
-.list {
-	color: #f4f4f5;
-	position: absolute;
-	top: 80%;
-	left: 80%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-weight: 600;
-	line-height: 1.4;
-	font-size: 1.2rem;
 }
 .title h1 {
 	font-size: 3.5rem;
@@ -43,26 +25,95 @@
 	font-weight: 900;
 	position: absolute;
 	letter-spacing: -0.02em;
-	top: 20%;
-	left: 50%;
 	transform: translate(-50%, -20%);
 }
 .button {
 	position: absolute;
 	top: 80%;
-	left: 20%;
+	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.list {
+	color: #f4f4f5;
+	position: absolute;
+	top: 80%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	font-weight: 600;
+	line-height: 1.1;
+	font-size: 1.6rem;
+	text-align: left;
+}
+.list li {
+	transform: skew(-10deg);
+	margin-left: 10px;
+}
+
+.list li:nth-child(1) {
+	margin-left: 30px;
+}
+
+.list li:nth-child(2) {
+	margin-left: 20px;
+}
+
+.list li:nth-child(3) {
+	margin-left: 10px;
+}
+
+.description {
+	padding: 0 20px;
+	max-width: 90rem;
+	margin: 70px auto 70px auto;
+}
+.description h2 {
+	font-size: 1.5rem;
+	color: #f4f4f5;
+	margin: 20px 0px;
+	font-weight: 600;
+}
+.description_text {
+	color: #a2a2a8;
+	text-align: justify;
+}
+
+.description_icon {
+	color: #f4f4f5;
+	font-size: 44px;
+}
+.icon_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+.description_box {
+	margin-top: 30px;
+	display: flex;
 }
 
 @media (max-width: 768px) {
 	.title h1 {
 		font-size: 2rem;
 	}
+	.title {
+		top: 30%;
+	}
 	.button {
 		left: 50%;
+		top: 55%;
 	}
 	.list {
-		top: 55%;
+		top: 80%;
 		left: 50%;
+	}
+	.description_box {
+		flex-direction: column;
+	}
+	.description_box h2 {
+		text-align: center;
+	}
+	.icon_box {
+		padding: 10px;
 	}
 }
