@@ -1,12 +1,12 @@
 import React from 'react'
-import classes from './Autohandel.module.css'
+import classes from './ServicesPage.module.css'
 import Image from 'next/image'
 import autohandelImg from '@/assets/autohandel.jpg'
-import Button from './button/Button'
 import { GiChoice } from 'react-icons/gi'
 import { FaHandsHelping, FaSearch } from 'react-icons/fa'
 import { MdOutlineAttachMoney } from 'react-icons/md'
 import { BiHappyAlt } from 'react-icons/bi'
+import Link from 'next/link'
 
 const Autohandel = () => {
 	return (
@@ -16,8 +16,10 @@ const Autohandel = () => {
 				<div className={classes.title}>
 					<h1>Autohandel</h1>
 				</div>
-				<div className={classes.button}>
-					<Button>Oferta</Button>
+				<div className={classes.button_container}>
+					<Link href='/oferta'>
+						<button className={classes.button}>Oferta</button>
+					</Link>
 				</div>
 				<ul className={classes.list}>
 					<li>Tanio</li>
@@ -61,8 +63,8 @@ const Autohandel = () => {
 						<h2>Pełna Transparentność</h2>
 						<p className={classes.description_text}>
 							Wierzymy w otwartość i uczciwość w relacjach z naszymi klientami. Dlatego też, każdy samochód w naszym
-							komisie jest dokładnie sprawdzany pod kątem technicznym. Oferujemy pełną historię
-							serwisową oraz gwarancję uczciwego podejścia do transakcji.
+							komisie jest dokładnie sprawdzany pod kątem technicznym. Oferujemy pełną historię serwisową oraz gwarancję
+							uczciwego podejścia do transakcji.
 						</p>
 					</div>
 				</div>

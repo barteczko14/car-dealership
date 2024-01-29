@@ -1,7 +1,8 @@
 import React from 'react'
+import PartsSales from '@/components/PartsSales'
 
 const page = () => {
-	return <div>page</div>
+	return <PartsSales></PartsSales>
 }
 
 export default page

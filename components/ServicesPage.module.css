@@ -26,8 +26,9 @@
 	position: absolute;
 	letter-spacing: -0.02em;
 	transform: translate(-50%, -20%);
+	text-align: center;
 }
-.button {
+.button_container {
 	position: absolute;
 	top: 80%;
 	left: 50%;
@@ -50,15 +51,15 @@
 }
 
 .list li:nth-child(1) {
-	margin-left: 30px;
+	margin-left: 60px;
 }
 
 .list li:nth-child(2) {
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 .list li:nth-child(3) {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .description {
@@ -92,6 +93,25 @@
 	display: flex;
 }
 
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 28px;
+	border-radius: 0.25rem;
+	background-color: rgb(57, 186, 180);
+	font-weight: 500;
+	line-height: 1.375;
+	color: #fff;
+	transition: background-color 0.3s;
+	font-size: 1.5rem;
+}
+.button:hover{
+	background-color: rgb(66, 209, 202);
+}
+
+
 @media (max-width: 768px) {
 	.title h1 {
 		font-size: 2rem;
@@ -99,7 +119,7 @@
 	.title {
 		top: 30%;
 	}
-	.button {
+	.button_container {
 		left: 50%;
 		top: 55%;
 	}
