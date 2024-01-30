@@ -2,8 +2,9 @@ import Image from 'next/image'
 import classes from './OffertsCarosuelCart.module.css'
 import Link from 'next/link'
 const OffertsCarosuelCart = ({ carData }) => {
+	const finalLink = `/oferta/${carData.id}`
 	return (
-		<Link href='/oferta/car'>
+		<Link href={finalLink}>
 			<div className={classes.cart} key={carData.id}>
 				<Image src={carData.src} width={500} height={300} className={classes.img} alt={carData.alt}></Image>
 				<div className={classes.mark_model}>
@@ -13,7 +14,7 @@ const OffertsCarosuelCart = ({ carData }) => {
 				</div>
 				<div className={classes.cart_detail}>
 					<span>Rok produkcji:</span>
-					<span>{carData.rocznik}</span>
+					<span>{carData.rok_produkcji}</span>
 				</div>
 				<div className={classes.cart_detail}>
 					<span>Przebieg:</span>
@@ -21,7 +22,7 @@ const OffertsCarosuelCart = ({ carData }) => {
 				</div>
 				<div className={classes.cart_detail}>
 					<span>Rodzaj paliwa:</span>
-					<span>{carData.paliwo}</span>
+					<span>{carData.rodzaj_paliwa}</span>
 				</div>
 				<div className={classes.cart_detail}>
 					<span>Pojemność silnika:</span>

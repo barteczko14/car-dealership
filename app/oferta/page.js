@@ -1,8 +1,8 @@
-import Title from '@/components/Title'
 import React from 'react'
+import Offerts from '@/components/Offerts'
 
 const oferta = () => {
-	return <div className='wrapper'></div>
+	return <Offerts></Offerts>
 }
 
 export default oferta
