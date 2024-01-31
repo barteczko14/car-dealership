@@ -1,0 +1,24 @@
+.wrapper {
+	max-width: 100rem;
+	margin: 0px auto;
+}
+.filters_container {
+	background-color: #2e2e33;
+	-webkit-box-align: center;
+	align-items: center;
+	display: flex;
+	flex-flow: wrap;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	margin: 0px 20px;
+	padding: 24px 0px;
+	row-gap: 8px;
+}
+.filter_container {
+	padding: 10px;
+	-webkit-box-flex: 0;
+	flex: 0 0 16.6667%;
+}
+.filter_container input, .filter_container select  {
+	width: 100%;
+}

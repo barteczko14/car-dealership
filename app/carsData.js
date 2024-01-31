@@ -77,7 +77,7 @@ const carsData = [
 		rok_produkcji: 2020,
 		przebieg: 56750,
 		pojemnosc: '1600',
-		rodzaj_paliwa: 'Diesel',
+		rodzaj_paliwa: 'Benzyna',
 		moc: '140 KM',
 		skrzynia: 'manualna',
 		napęd: 'na przednią oś',
