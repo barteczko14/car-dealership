@@ -14,15 +14,57 @@ const Offerts = () => {
 		let result = carsData
 
 		if (filters.brandFilter) {
-			result = result.filter(car => car.marka == filters.brandFilter)
+			result = result.filter(car => car.marka.toLowerCase().includes(filters.brandFilter.toLowerCase()))
 		}
 
-		if (filters.yearFilter) {
-			result = result.filter(car => car.rok_produkcji == filters.yearFilter)
+		if (filters.gearboxFilter) {
+			result = result.filter(car => car.skrzynia.toLowerCase().includes(filters.gearboxFilter.toLowerCase()))
+		}
+
+		if (filters.modelFilter) {
+			result = result.filter(car => car.model.toLowerCase().includes(filters.modelFilter.toLowerCase()))
+		}
+
+		if (filters.yearFromFilter && filters.yearToFilter) {
+			result = result.filter(
+				car => car.rok_produkcji >= filters.yearFromFilter && car.rok_produkcji <= filters.yearToFilter
+			)
+		}
+
+		if (!filters.yearFromFilter && filters.yearToFilter) {
+			result = result.filter(car => car.rok_produkcji <= filters.yearToFilter)
+		}
+
+		if (filters.yearFromFilter && !filters.yearToFilter) {
+			result = result.filter(car => car.rok_produkcji >= filters.yearFromFilter)
 		}
 
 		if (filters.fuelTypeFilter) {
-			result = result.filter(car => car.rodzaj_paliwa.includes(filters.fuelTypeFilter))
+			result = result.filter(car => car.rodzaj_paliwa.toLowerCase().includes(filters.fuelTypeFilter.toLowerCase()))
+		}
+
+		if (filters.courseFromFilter && filters.courseToFilter) {
+			result = result.filter(car => car.przebieg >= filters.courseFromFilter && car.przebieg <= filters.courseToFilter)
+		}
+
+		if (!filters.courseFromFilter && filters.courseToFilter) {
+			result = result.filter(car => car.przebieg <= filters.courseToFilter)
+		}
+
+		if (filters.courseFromFilter && !filters.courseToFilter) {
+			result = result.filter(car => car.przebieg >= filters.courseFromFilter)
+		}
+
+		if (filters.priceFromFilter && filters.priceToFilter) {
+			result = result.filter(car => car.cena >= filters.priceFromFilter && car.cena <= filters.priceToFilter)
+		}
+
+		if (!filters.priceFromFilter && filters.priceToFilter) {
+			result = result.filter(car => car.cena <= filters.priceToFilter)
+		}
+
+		if (filters.priceFromFilter && !filters.priceToFilter) {
+			result = result.filter(car => car.cena >= filters.priceFromFilter)
 		}
 
 		setFilteredCars(result)
