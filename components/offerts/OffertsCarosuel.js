@@ -18,6 +18,7 @@ function NextArrow({ className, onClick }) {
 }
 
 const OffertsCarosuel = () => {
+	
 	const settings = {
 		dots: false,
 		speed: 1000,

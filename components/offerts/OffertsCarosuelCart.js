@@ -6,7 +6,7 @@ const OffertsCarosuelCart = ({ carData }) => {
 	return (
 		<Link href={finalLink}>
 			<div className={classes.cart} key={carData.id}>
-				<Image src={carData.src} width={500} height={300} className={classes.img} alt={carData.alt}></Image>
+				<Image src={carData.src[0]} width={500} height={300} className={classes.img} alt={carData.alt}></Image>
 				<div className={classes.mark_model}>
 					<span>
 						{carData.marka} {carData.model}
@@ -33,7 +33,7 @@ const OffertsCarosuelCart = ({ carData }) => {
 					<span>{carData.moc}</span>
 				</div>
 
-				<h2 className={classes.price}>39900 zł</h2>
+				<h2 className={classes.price}>{carData.cena} zł</h2>
 			</div>
 		</Link>
 	)

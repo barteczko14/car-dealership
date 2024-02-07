@@ -88,7 +88,7 @@ const Offerts = () => {
 					<Link className={classes.link} href={`/oferta/${carData.id}`}>
 						<div className={classes.cart} key={carData.id}>
 							<div className={classes.img_container}>
-								<Image src={carData.src} width={500} height={300} className={classes.img} alt={carData.alt}></Image>
+								<Image src={carData.src[0]} width={500} height={300} className={classes.img} alt={carData.alt}></Image>
 							</div>
 							<div className={classes.details_container}>
 								<div className={classes.title_price_container}>
