@@ -1,5 +1,4 @@
-import React from 'react'
-import Autohandel from '@/components/Autohandel'
+import Autohandel from '@/components/servicesPages/Autohandel'
 
 const page = () => {
 	return <Autohandel></Autohandel>

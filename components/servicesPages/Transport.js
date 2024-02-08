@@ -10,9 +10,9 @@ import { BiHappyAlt } from 'react-icons/bi'
 const Transport = () => {
 	return (
 		<section>
-			<div className={classes.hero}>
-				<Image className={classes.outer_img} src={transportImg}></Image>
-				<div className={classes.title}>
+			<div className={classes.hero_section_container}>
+				<Image className={classes.hero_img} src={transportImg}></Image>
+				<div className={classes.title_container}>
 					<h1>Transport</h1>
 				</div>
 				<ul className={classes.list}>

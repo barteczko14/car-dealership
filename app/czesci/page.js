@@ -1,5 +1,4 @@
-import React from 'react'
-import PartsSales from '@/components/PartsSales'
+import PartsSales from '@/components/servicesPages/PartsSales'
 
 const page = () => {
 	return <PartsSales></PartsSales>

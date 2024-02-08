@@ -1,8 +1,7 @@
-import Serwis from '@/components/Serwis'
-import React from 'react'
+import Repair from '@/components/servicesPages/Repair'
 
 const page = () => {
-	return <Serwis></Serwis>
+	return <Repair></Repair>
 }
 
 export default page

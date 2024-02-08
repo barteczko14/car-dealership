@@ -1,39 +1,55 @@
-.hero {
+.hero_section_container {
 	position: relative;
 	height: 70vh;
 	background: linear-gradient(to top, #000, rgba(235, 242, 241, 0.4));
 	box-shadow: 0px 20px 20px 5px #000;
 }
-.outer_img {
-	width: 100%;
+
+.hero_img {
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
 	filter: brightness(50%);
 	opacity: 0.3;
 }
 
-.title {
+.title_container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.title h1 {
-	font-size: 3.5rem;
+
+.title_container h1 {
+	font-size: 3.2rem;
 	color: #f4f4f5;
-	line-height: 1.18;
 	font-weight: 900;
 	position: absolute;
-	letter-spacing: -0.02em;
-	transform: translate(-50%, -20%);
+	letter-spacing: 0.05em;
+	transform: translate(-50%, -50%);
 	text-align: center;
 }
+
 .button_container {
 	position: absolute;
 	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.button {
+	padding: 8px 16px;
+	border-radius: 0.25rem;
+	background-color: rgb(57, 186, 180);
+	color: #fff;
+	transition: background-color 0.3s;
+	font-size: 1.4rem;
+}
+
+.button:hover {
+	background-color: rgb(66, 209, 202);
+}
+
 .list {
 	color: #f4f4f5;
 	position: absolute;
@@ -41,13 +57,12 @@
 	left: 80%;
 	transform: translate(-50%, -50%);
 	font-weight: 600;
-	line-height: 1.1;
 	font-size: 1.6rem;
-	text-align: left;
 }
+
 .list li {
 	transform: skew(-10deg);
-	margin-left: 10px;
+	letter-spacing: 0.07em;
 }
 
 .list li:nth-child(1) {
@@ -63,69 +78,59 @@
 }
 
 .description {
-	padding: 0 20px;
+	padding: 0 40px;
 	max-width: 90rem;
-	margin: 70px auto 70px auto;
+	margin: 70px auto;
 }
+
 .description h2 {
 	font-size: 1.5rem;
 	color: #f4f4f5;
 	margin: 20px 0px;
 	font-weight: 600;
 }
+
 .description_text {
 	color: #a2a2a8;
 	text-align: justify;
 }
 
-.description_icon {
-	color: #f4f4f5;
-	font-size: 44px;
+.description_box {
+	margin-top: 30px;
+	display: flex;
 }
+
 .icon_box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 40px;
 }
-.description_box {
-	margin-top: 30px;
-	display: flex;
-}
 
-
-.button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 14px 28px;
-	border-radius: 0.25rem;
-	background-color: rgb(57, 186, 180);
-	font-weight: 500;
-	line-height: 1.375;
-	color: #fff;
-	transition: background-color 0.3s;
-	font-size: 1.5rem;
+.description_icon {
+	color: rgb(57, 186, 180);
+	font-size: 44px;
 }
-.button:hover{
-	background-color: rgb(66, 209, 202);
-}
-
 
 @media (max-width: 768px) {
-	.title h1 {
-		font-size: 2rem;
+	.title_container h1 {
+		font-size: 2.4rem;
 	}
-	.title {
+	.title_container {
 		top: 30%;
 	}
 	.button_container {
 		left: 50%;
-		top: 55%;
+		top: 50%;
+	}
+	.button {
+		padding: 7px 14px;
+		font-size: 1.2rem;
 	}
 	.list {
 		top: 80%;
 		left: 50%;
+		font-size: 1.4rem;
 	}
 	.description_box {
 		flex-direction: column;

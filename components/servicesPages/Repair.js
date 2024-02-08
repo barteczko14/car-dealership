@@ -1,20 +1,17 @@
-// Importuj niezbędne biblioteki i komponenty
-import React from 'react'
-import classes from './ServicesPage.module.css' // Upewnij się, że utworzono odpowiedni plik CSS
+import classes from './ServicesPage.module.css'
 import Image from 'next/image'
-import serviceImg from '@/assets/serwis.jpg' // Importuj obraz serwisu samochodowego
+import serviceImg from '@/assets/serwis.jpg'
 import { IoConstructOutline } from 'react-icons/io5'
 import { FaWrench, FaSearch } from 'react-icons/fa'
 import { MdOutlineAttachMoney } from 'react-icons/md'
 import { BiHappyAlt } from 'react-icons/bi'
-import Link from 'next/link'
 
-const CarServicePage = () => {
+const Repair = () => {
 	return (
 		<section>
-			<div className={classes.hero}>
-				<Image className={classes.outer_img} src={serviceImg} alt='Serwis Samochodowy'></Image>
-				<div className={classes.title}>
+			<div className={classes.hero_section_container}>
+				<Image className={classes.hero_img} src={serviceImg} alt='Serwis Samochodowy'></Image>
+				<div className={classes.title_container}>
 					<h1>Serwis Samochodowy</h1>
 				</div>
 				<ul className={classes.list}>
@@ -91,4 +88,4 @@ const CarServicePage = () => {
 	)
 }
 
-export default CarServicePage
+export default Repair

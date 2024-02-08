@@ -1,19 +1,18 @@
-import React from 'react'
-import classes from './ServicesPage.module.css'
+import Link from 'next/link'
 import Image from 'next/image'
+import classes from './ServicesPage.module.css'
 import autohandelImg from '@/assets/autohandel.jpg'
 import { GiChoice } from 'react-icons/gi'
 import { FaHandsHelping, FaSearch } from 'react-icons/fa'
 import { MdOutlineAttachMoney } from 'react-icons/md'
 import { BiHappyAlt } from 'react-icons/bi'
-import Link from 'next/link'
 
 const Autohandel = () => {
 	return (
 		<section>
-			<div className={classes.hero}>
-				<Image className={classes.outer_img} src={autohandelImg}></Image>
-				<div className={classes.title}>
+			<div className={classes.hero_section_container}>
+				<Image className={classes.hero_img} src={autohandelImg} alt='Grafika przedstawiająca uścisk dłoni.'></Image>
+				<div className={classes.title_container}>
 					<h1>Autohandel</h1>
 				</div>
 				<div className={classes.button_container}>

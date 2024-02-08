@@ -10,9 +10,9 @@ import { BiHappyAlt } from 'react-icons/bi'
 const PartsSales = () => {
 	return (
 		<section>
-			<div className={classes.hero}>
-				<Image className={classes.outer_img} src={czesciImg}></Image>
-				<div className={classes.title}>
+			<div className={classes.hero_section_container}>
+				<Image className={classes.hero_img} src={czesciImg}></Image>
+				<div className={classes.title_container}>
 					<h1>Sprzedaż części</h1>
 				</div>
 				<ul className={classes.list}>

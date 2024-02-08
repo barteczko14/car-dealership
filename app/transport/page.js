@@ -1,5 +1,4 @@
-import Transport from '@/components/Transport'
-import React from 'react'
+import Transport from '@/components/servicesPages/Transport'
 
 const page = () => {
 	return <Transport></Transport>
