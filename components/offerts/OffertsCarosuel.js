@@ -1,7 +1,7 @@
 'use client'
 import Slider from 'react-slick'
 import classes from './OffersCarosuel.module.css'
-import Title from '../Title'
+import Title from '../title/Title'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import carsData from '@/app/carsData.js'
@@ -18,7 +18,6 @@ function NextArrow({ className, onClick }) {
 }
 
 const OffertsCarosuel = () => {
-	
 	const settings = {
 		dots: false,
 		speed: 1000,
@@ -51,19 +50,19 @@ const OffertsCarosuel = () => {
 		],
 	}
 	return (
-			<section className={classes.offers_carosuel_container}>
-				<Title>Ogłoszenia</Title>
-				<Slider {...settings}>
-					{carsData.map(carData => (
-						<OffertsCarosuelCart key={carData.id} carData={carData}></OffertsCarosuelCart>
-					))}
-				</Slider>
-				<div className={classes.offerts_btn}>
-					<Button>
-						<Link href='/oferta'>Pełna oferta</Link>
-					</Button>
-				</div>
-			</section>
+		<section className={classes.offers_carosuel_container}>
+			<Title>Ogłoszenia</Title>
+			<Slider {...settings}>
+				{carsData.map(carData => (
+					<OffertsCarosuelCart key={carData.id} carData={carData}></OffertsCarosuelCart>
+				))}
+			</Slider>
+			<div className={classes.offerts_btn}>
+				<Link className={classes.button} href='/oferta'>
+					Pełna oferta
+				</Link>
+			</div>
+		</section>
 	)
 }
 

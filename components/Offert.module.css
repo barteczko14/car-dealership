@@ -130,6 +130,9 @@
 	.phone_number {
 		font-size: 1.4rem;
 	}
+	.detail {
+		width: 50%;
+	}
 }
 
 @media (max-width: 992px) {

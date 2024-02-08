@@ -1,5 +1,5 @@
 import classes from './Services.module.css'
-import Title from '../Title'
+import Title from '../title/Title'
 import { FaCar } from 'react-icons/fa6'
 import { FaTruck, FaTools, FaDollarSign, FaArrowRight } from 'react-icons/fa'
 import Link from 'next/link'
@@ -40,9 +40,7 @@ const Services = () => {
 					<div className={`${classes.service} ${classes.color_four}`}>
 						<FaTruck className={classes.icon} />
 						<h4 className={classes.service_title}>Transport</h4>
-						<p className={classes.service_description}>
-							Szybki i bezpieczny transport pojazdów i maszyn.
-						</p>
+						<p className={classes.service_description}>Szybki i bezpieczny transport pojazdów i maszyn.</p>
 						<FaArrowRight className={classes.arrow_icon} />
 					</div>
 				</Link>

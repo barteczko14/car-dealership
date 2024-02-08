@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './AboutUs.module.css'
-import Title from '../Title'
+import Title from '../title/Title'
 import Image from 'next/image'
 import aboutUsImage from '../../assets/about-us.jpg'
 const AboutUs = () => {

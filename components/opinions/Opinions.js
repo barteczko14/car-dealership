@@ -1,5 +1,5 @@
 import classes from './Opinions.module.css'
-import Title from '../Title'
+import Title from '../title/Title'
 import opinionsData from '@/app/opinionsData'
 import Opinion from './Opinion'
 const Opinions = () => {

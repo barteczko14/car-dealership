@@ -27,9 +27,9 @@ const Navbar = () => {
 				<Image className={classes.logo} alt='logo' src={logo}></Image>
 			</Link>
 			<div className={classes.links_container}>
-				<Button>
-					<Link href='/oferta'>Oferta</Link>
-				</Button>
+				<Link className={classes.button} href='/oferta'>
+					Oferta
+				</Link>
 			</div>
 			<div onClick={() => setNav(!nav)} className={classes.burger_icon}>
 				{nav ? <FaTimes size={30} /> : <FaBars size={30} />}

@@ -10,7 +10,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 100%;
 }
 
 .cart_detail {
@@ -19,6 +18,7 @@
 	justify-content: space-between;
 	padding: 5px 20px;
 }
+
 .link {
 	width: 100%;
 	display: flex;

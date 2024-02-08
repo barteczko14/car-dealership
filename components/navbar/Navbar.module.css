@@ -18,6 +18,22 @@
 	margin: 0 1rem;
 }
 
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 16px;
+	border-radius: 0.25rem;
+	background-color: rgb(57, 186, 180);
+	font-weight: 500;
+	line-height: 1.375;
+	color: #fff;
+	transition: background-color 0.3s;
+}
+.button:hover{
+	background-color: rgb(66, 209, 202);
+}
+
 .logo {
 	height: 100%;
 	width: 60px;

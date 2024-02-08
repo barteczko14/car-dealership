@@ -7,7 +7,6 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
-import carsData from '@/app/carsData.js'
 const Offert = ({ carData }) => {
 	const [nav1, setNav1] = useState(null)
 	const [currentSlide, setCurrentSlide] = useState(0)
@@ -27,16 +26,11 @@ const Offert = ({ carData }) => {
 
 	const settings = {
 		dots: false,
-		speed: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		infinite: true,
 		autoplay: false,
 		onReInit: () => setCurrentSlide(slider1?.innerSlider.state.currentSlide),
-		autoplaySpeed: 1000,
-		lazyLoad: true,
 		asNavFor: '.slider-nav',
-		focusOnSelect: true,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
 	}
@@ -47,25 +41,24 @@ const Offert = ({ carData }) => {
 				<div className={classes.container}>
 					<Slider {...settings} asNavFor={nav1} ref={slider => setSlider1(slider)}>
 						{carData.src.map(item => (
-							<div className={classes.img_container} key={item.id}>
-								<Image alt={carData.alt} className={classes.img} src={item} width={700} height={450}></Image>
+							<div className={classes.img_container} key={item}>
+								<Image priority alt={carData.alt} className={classes.img} src={item} width={700} height={450}></Image>
 							</div>
 						))}
 					</Slider>
 					<div className={classes.thumb_wrapper}>
 						{carData.src.map((item, idx) => (
 							<div
-								key={item.id}
+								key={item}
 								className={currentSlide === idx ? 'active' : null}
 								onClick={() => {
 									slider1?.slickGoTo(idx)
 								}}>
-								<Image alt={carData.alt} className={classes.img} src={item} width={700} height={500}></Image>
+								<Image priority alt={carData.alt} className={classes.img} src={item} width={700} height={500}></Image>
 							</div>
 						))}
 					</div>
 				</div>
-
 				<div className={classes.title_container}>
 					<div className={classes.title_box}>
 						<h2 className={classes.title}>{carData.tytuł}</h2>

@@ -1,37 +1,31 @@
-.wrapper {
-	max-width: 100rem;
-	margin: 0px auto;
-}
 .filters_container {
 	background-color: #2e2e33;
 	-webkit-box-align: center;
-	align-items: center;
 	display: flex;
 	flex-flow: wrap;
 	-webkit-box-pack: start;
-	justify-content: flex-start;
-	margin: 0px 20px;
+	margin: 20px 20px 0px 20px;
 	padding: 24px 0px;
-	row-gap: 8px;
+	row-gap: 10px;
 }
-.filter_container {
+.filters_container div {
 	padding: 10px;
 	-webkit-box-flex: 0;
 	flex: 0 0 20%;
 }
-.filter_container input,
-.filter_container select {
+.filters_container div input,
+.filters_container div select {
 	width: 100%;
 }
 
 @media (max-width: 1200px) {
-	.filter_container {
+	.filters_container div {
 		flex: 0 0 33.33%;
 	}
 }
 
 @media (max-width: 768px) {
-	.filter_container {
+	.filters_container div {
 		flex: 0 0 50%;
 	}
 }

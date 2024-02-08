@@ -1,7 +1,7 @@
 'use client'
 import classes from './Footer.module.css'
 import { TbMail, TbPhone, TbBrandWhatsapp, TbBrandFacebook } from 'react-icons/tb'
-import Title from '../Title'
+import Title from '../title/Title'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
