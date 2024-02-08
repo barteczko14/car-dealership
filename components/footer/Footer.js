@@ -5,6 +5,7 @@ import Title from '../title/Title'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
+
 	const container = {
 		hidden: { opacity: 0, scale: 0.5 },
 		show: {
@@ -25,7 +26,12 @@ const Footer = () => {
 	return (
 		<footer id='kontakt' className={classes.footer}>
 			<Title>Kontakt</Title>
-			<motion.div variants={container} initial='hidden' animate='show' className={classes.footer_cards_container}>
+			<motion.div
+				variants={container}
+				initial='hidden'
+				whileInView='show'
+				viewport={{ once: true }}
+				className={classes.footer_cards_container}>
 				<motion.div variants={item} className={classes.footer_card}>
 					<div>
 						<TbPhone />
