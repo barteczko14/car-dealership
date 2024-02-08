@@ -6,9 +6,9 @@ import classes from './Hero.module.css'
 const Hero = () => {
 	return (
 		<section className={classes.hero}>
-			<Image className={classes.outer_img} src={heroImg}></Image>
+			<Image alt='Grafika hero' className={classes.outer_img} src={heroImg}></Image>
 			<div>
-				<Image className={classes.inner_img} src={heroImg2}></Image>
+				<Image alt='Grafika hero' className={classes.inner_img} src={heroImg2}></Image>
 				<h1>
 					Your dream <span>car</span>
 				</h1>

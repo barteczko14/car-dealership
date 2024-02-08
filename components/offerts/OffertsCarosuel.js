@@ -25,7 +25,7 @@ const OffertsCarosuel = () => {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		infinite: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 5000,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
@@ -50,13 +50,12 @@ const OffertsCarosuel = () => {
 			},
 		],
 	}
-
 	return (
 			<section className={classes.offers_carosuel_container}>
 				<Title>Ogłoszenia</Title>
 				<Slider {...settings}>
 					{carsData.map(carData => (
-						<OffertsCarosuelCart carData={carData}></OffertsCarosuelCart>
+						<OffertsCarosuelCart key={carData.id} carData={carData}></OffertsCarosuelCart>
 					))}
 				</Slider>
 				<div className={classes.offerts_btn}>

@@ -9,7 +9,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import carsData from '@/app/carsData.js'
 const Offert = ({ carData }) => {
-
 	const [nav1, setNav1] = useState(null)
 	const [currentSlide, setCurrentSlide] = useState(0)
 	const [slider1, setSlider1] = useState(null)
@@ -49,7 +48,7 @@ const Offert = ({ carData }) => {
 					<Slider {...settings} asNavFor={nav1} ref={slider => setSlider1(slider)}>
 						{carData.src.map(item => (
 							<div className={classes.img_container} key={item.id}>
-								<Image className={classes.img} src={item} width={700} height={450}></Image>
+								<Image alt={carData.alt} className={classes.img} src={item} width={700} height={450}></Image>
 							</div>
 						))}
 					</Slider>
@@ -61,7 +60,7 @@ const Offert = ({ carData }) => {
 								onClick={() => {
 									slider1?.slickGoTo(idx)
 								}}>
-								<Image className={classes.img} src={item} width={700} height={500}></Image>
+								<Image alt={carData.alt} className={classes.img} src={item} width={700} height={500}></Image>
 							</div>
 						))}
 					</div>

@@ -4,7 +4,7 @@ const Opinion = ({ opinionData }) => {
 	return (
 		<div className={classes.opinion}>
 			<div className={classes.avatar_container}>
-				<Image width={300} height={300} className={classes.avatar} src={opinionData.src}></Image>
+				<Image width={300} height={300} alt={opinionData.alt} className={classes.avatar} src={opinionData.src}></Image>
 			</div>
 			<blockquote className={classes.opinion_text}>"{opinionData.opinia}"</blockquote>
 			<div className={classes.opinion_author}>

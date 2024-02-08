@@ -19,9 +19,9 @@
 	object-fit: cover;
 }
 .opinion_text {
-	font-size: 1.25rem;
-	line-height: 1.5;
+	font-size: 1rem;
 	margin: 0;
+	text-align: justify;
 }
 .opinion_author {
 	font-weight: 700;

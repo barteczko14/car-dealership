@@ -2,7 +2,7 @@
 	border-bottom: 1px solid #39bab4;
 	display: flex;
 	justify-content: space-between;
-	padding: 5px 20px;
+	padding: 5px 15px;
 }
 .cart {
 	background-color: #2e2e33;
@@ -16,7 +16,7 @@
 .mark_model {
 	color: #f4f4f5;
 	margin: 1rem 0;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 900;
 }
 .price {
@@ -24,7 +24,6 @@
 	margin: 1rem 0;
 	font-size: 1.6rem;
 	font-weight: 900;
-	line-height: 1;
 }
 .img {
 	object-fit: cover;

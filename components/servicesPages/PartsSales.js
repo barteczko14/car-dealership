@@ -11,7 +11,7 @@ const PartsSales = () => {
 	return (
 		<section>
 			<div className={classes.hero_section_container}>
-				<Image className={classes.hero_img} src={czesciImg}></Image>
+				<Image className={classes.hero_img} src={czesciImg} alt='Grafika przedstawiająca uścisk dłoni.'></Image>
 				<div className={classes.title_container}>
 					<h1>Sprzedaż części</h1>
 				</div>

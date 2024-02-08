@@ -11,7 +11,7 @@ const Transport = () => {
 	return (
 		<section>
 			<div className={classes.hero_section_container}>
-				<Image className={classes.hero_img} src={transportImg}></Image>
+				<Image className={classes.hero_img} src={transportImg} alt='Grafika przedstawiająca uścisk dłoni.'></Image>
 				<div className={classes.title_container}>
 					<h1>Transport</h1>
 				</div>
