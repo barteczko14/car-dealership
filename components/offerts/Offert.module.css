@@ -121,7 +121,7 @@
 }
 .details_description_container {
 	font-size: 1rem;
-	margin: 50px;
+	margin: 20px;
 	text-align: justify;
 	color: #a2a2a8;
 }
@@ -161,9 +161,10 @@
 	}
 	.detail {
 		width: 100%;
+		padding: 10px 20px;
 	}
 	.title {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		margin: 20px 0;
 	}
 	.price {
@@ -177,11 +178,14 @@
 		padding: 15px 10px;
 	}
 	.title_details {
-		width: 50%;
-		margin: 0;
+		width: 90%;
+		margin: 10px;
 	}
 	.phone_container {
 		padding: 0;
 		margin: 0;
+	}
+	.container {
+		width: 90%;
 	}
 }

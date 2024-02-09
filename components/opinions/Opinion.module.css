@@ -28,3 +28,8 @@
 	margin-top: 0.5rem;
 	color: #39bab4;
 }
+@media (max-width: 992px) {
+	.opinion {
+		width: 100%;
+	}
+}

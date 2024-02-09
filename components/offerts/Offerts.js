@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import classes from './Offerts.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import Filters from './Filters'
+import Filters from '../Filters'
 
 const Offerts = () => {
 	const [filteredCars, setFilteredCars] = useState(carsData)

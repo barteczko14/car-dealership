@@ -99,7 +99,7 @@ const carsData = [
 	{
 		id: 4,
 		cena: 33900,
-		tytuł: 'FNissan Qashqai 1.5 dCi Acenta',
+		tytuł: 'Nissan Qashqai 1.5 dCi Acenta',
 		marka: 'Nissan',
 		model: 'Qashqai',
 		rok_produkcji: 2011,

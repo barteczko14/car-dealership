@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import carsData from '@/app/carsData.js'
-import Offert from '@/components/Offert'
+import Offert from '@/components/offerts/Offert'
 const page = ({ params }) => {
 	const id = params.carid - 1
 	// console.log(carsData[id].marka)
