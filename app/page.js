@@ -8,10 +8,10 @@ import OffertsCarosuel from '@/components/offerts/OffertsCarosuel'
 export default function Home() {
 	return (
 		<>
-			<Hero></Hero>
+			{/* <Hero></Hero> */}
 			<div className={classes.wrapper}>
-				<AboutUs></AboutUs>
 				<OffertsCarosuel />
+				<AboutUs></AboutUs>
 				<Opinions></Opinions>
 				<Services></Services>
 			</div>
