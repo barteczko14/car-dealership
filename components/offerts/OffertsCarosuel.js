@@ -69,7 +69,7 @@ const OffertsCarosuel = () => {
 		<section className={classes.offers_carosuel_container}>
 			<Title>Ogłoszenia</Title>
 			<Slider {...settings}>
-				{carsData.length > 1 &&
+				{carsData &&
 					carsData.map(carData => <OffertsCarosuelCart key={carData.id} carData={carData}></OffertsCarosuelCart>)}
 			</Slider>
 			<div className={classes.offerts_btn}>

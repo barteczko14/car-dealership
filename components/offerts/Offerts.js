@@ -98,8 +98,8 @@ const Offerts = () => {
 			<div className={classes.filter_container}>
 				<Filters onFilterChange={handleFilterChange} />
 			</div>
-			{carsData.length > 1 &&
-				filteredCars.length > 1 &&
+			{carsData &&
+				filteredCars &&
 				filteredCars.map(carData => (
 					<Link className={classes.link} key={carData.id} href={`/oferta/${carData.id}`}>
 						<div className={classes.cart}>
