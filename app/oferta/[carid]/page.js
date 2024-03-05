@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Offert from '@/components/offerts/Offert'
-const page = ({ params }) => {
+const Page = ({ params }) => {
 	const [carData, setcarData] = useState([])
 
 	async function fetchData() {
@@ -31,4 +31,4 @@ const page = ({ params }) => {
 	return <>{carData.length > 1 && <Offert carData={selectedCar}></Offert>}</>
 }
 
-export default page
+export default Page
