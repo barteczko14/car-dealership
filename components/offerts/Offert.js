@@ -99,7 +99,7 @@ const Offert = ({ carData }) => {
 					</div>
 					<div className={classes.detail}>
 						<span className={classes.detail_title}>Pojemność</span>
-						<span>{carData.pojemnosc}</span>
+						<span>{carData.pojemnosc} cm3</span>
 					</div>
 					<div className={classes.detail}>
 						<span className={classes.detail_title}>Rodzaj paliwa</span>
@@ -107,7 +107,7 @@ const Offert = ({ carData }) => {
 					</div>
 					<div className={classes.detail}>
 						<span className={classes.detail_title}>Moc</span>
-						<span>{carData.moc}</span>
+						<span>{carData.moc} KM</span>
 					</div>
 					<div className={classes.detail}>
 						<span className={classes.detail_title}>Skrzynia biegów</span>

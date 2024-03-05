@@ -4,9 +4,8 @@ import classes from './OffersCarosuel.module.css'
 import Title from '../title/Title'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import carsData from '@/app/carsData.js'
+import { useState, useEffect } from 'react'
 import OffertsCarosuelCart from './OffertsCarosuelCart'
-import Button from '../button/Button'
 import Link from 'next/link'
 
 function PrevArrow({ className, onClick }) {
@@ -18,6 +17,23 @@ function NextArrow({ className, onClick }) {
 }
 
 const OffertsCarosuel = () => {
+	const [carsData, setcarsData] = useState([])
+
+	async function fetchData() {
+		const response = await fetch('/api/hello')
+
+		if (!response.ok) {
+			throw new Error(`Błąd pobierania danych. Status: ${response.status}`)
+		}
+
+		const data = await response.json()
+		setcarsData(data.data)
+	}
+
+	useEffect(() => {
+		fetchData()
+	}, [])
+
 	const settings = {
 		dots: false,
 		speed: 1000,
