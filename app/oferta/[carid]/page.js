@@ -28,7 +28,7 @@ const Page = ({ params }) => {
 	const carId = params.carid
 	const selectedCar = carData.find(car => car.id === carId)
 
-	return <>{carData.length > 1 && <Offert carData={selectedCar}></Offert>}</>
+	return <>{selectedCar && <Offert carData={selectedCar}></Offert>}</>
 }
 
 export default Page
