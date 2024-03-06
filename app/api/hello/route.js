@@ -4,46 +4,47 @@ import { NextResponse } from 'next/server'
 export async function GET() {
 	let client
 
+	// try {
 	try {
-		try {
-			client = await connectDatabase()
-		} catch (error) {
-			res.status(500).json({ message: 'Connecting to the database failed!' })
-			return
-		}
-		const db = client.db()
-		const carsData = await db.collection('carsData').find().toArray()
-		client.close()
-
-		const transformedData = carsData.map(carData => ({
-			id: carData._id,
-			tytuł: carData.tytuł,
-			marka: carData.marka,
-			model: carData.model,
-			rok_produkcji: carData.rok_produkcji,
-			opis: carData.opis,
-			cena: carData.cena.$numberInt,
-			kolor: carData.kolor,
-			alt: carData.alt,
-			bezwypadkowy: carData.bezwypadkowy,
-			kraj_pochodzenia: carData.kraj_pochodzenia,
-			liczba_drzwi: carData.liczba_drzwi.$numberInt,
-			liczba_miejsc: carData.liczba_miejsc.$numberInt,
-			moc: carData.moc.$numberInt,
-			napęd: carData.napęd,
-			pojemnosc: carData.pojemnosc.$numberInt,
-			przebieg: carData.przebieg.$numberInt,
-			rodzaj_paliwa: carData.rodzaj_paliwa,
-			skrzynia: carData.skrzynia,
-			spalanie: carData.spalanie,
-			src: carData.src,
-		}))
-
-		return NextResponse.json({ data: transformedData })
+		client = await connectDatabase()
 	} catch (error) {
-		return NextResponse.json({ error: 'Error retrieving data from MongoDB' })
+		res.status(500).json({ message: 'Connecting to the database failed!' })
+		return
 	}
+	const db = client.db()
+	const carsData = await db.collection('carsData').find().toArray()
+	client.close()
+
+	const transformedData = carsData.map(carData => ({
+		id: carData._id,
+		tytuł: carData.tytuł,
+		marka: carData.marka,
+		model: carData.model,
+		rok_produkcji: carData.rok_produkcji,
+		opis: carData.opis,
+		cena: carData.cena.$numberInt,
+		kolor: carData.kolor,
+		alt: carData.alt,
+		bezwypadkowy: carData.bezwypadkowy,
+		kraj_pochodzenia: carData.kraj_pochodzenia,
+		liczba_drzwi: carData.liczba_drzwi.$numberInt,
+		liczba_miejsc: carData.liczba_miejsc.$numberInt,
+		moc: carData.moc.$numberInt,
+		napęd: carData.napęd,
+		pojemnosc: carData.pojemnosc.$numberInt,
+		przebieg: carData.przebieg.$numberInt,
+		rodzaj_paliwa: carData.rodzaj_paliwa,
+		skrzynia: carData.skrzynia,
+		spalanie: carData.spalanie,
+		src: carData.src,
+	}))
+
+	return NextResponse.json({ data: transformedData })
 }
+// 	catch (error) {
+// 		return NextResponse.json({ error: 'Error retrieving data from MongoDB' })
+// 	}
+// }
 
 // Adding document to collection in mongoDb
 
