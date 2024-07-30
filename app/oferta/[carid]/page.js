@@ -10,7 +10,7 @@ const Page = ({ params }) => {
 			const response = await fetch('/api/hello')
 
 			if (!response.ok) {
-				throw new Error(`Błąd pobierania danych. Status: ${response.status}`)
+				throw new Error(`Błąd pobierania danych! Status: ${response.status}`)
 			}
 
 			const data = await response.json()

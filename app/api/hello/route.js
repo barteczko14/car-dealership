@@ -4,7 +4,6 @@ import { NextResponse } from 'next/server'
 export async function GET() {
 	let client
 
-	// try {
 	try {
 		client = await connectDatabase()
 	} catch (error) {
@@ -41,10 +40,6 @@ export async function GET() {
 
 	return NextResponse.json({ data: transformedData })
 }
-// 	catch (error) {
-// 		return NextResponse.json({ error: 'Error retrieving data from MongoDB' })
-// 	}
-// }
 
 // Adding document to collection in mongoDb
 
